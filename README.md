@@ -67,7 +67,7 @@ The last prediction layer was removed and replaced by a custom [Dense layer](#ke
 
 ![vgg16](vgg16.jpg)
 
-Only the last few layers, with the custom layer highlited in ![#880016](https://via.placeholder.com/15/#880016/000000?text=+) `Maroon` is displayed in the above figure, since the architecture is available online.
+Only the last few layers, with the custom layer highlited in ![#880016](https://via.placeholder.com/15/880016/000000?text=+) `Maroon` is displayed in the above figure, since the architecture is available online.
 
 The model's layers, are frozen except for the last 3, which are left as trainable.
 
@@ -82,7 +82,7 @@ The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical c
 #### Results:
 On completion of training, and reduction of LR, below is the graph of the losses of the last few epochs;
 
-![vgg16training][vgg16loss.png]
+![vgg16training][vgg loss.png]
 
 
 We can clearly see a divergance and not effective model with some heavy loss.
