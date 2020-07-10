@@ -67,7 +67,7 @@ The last prediction layer was removed and replaced by a custom [Dense layer](#ke
 
 ![vgg16](vgg16.jpg)
 
-Only the last few layers, with the custom layer highlited in ![#880016](https://via.placeholder.com/15/f03c15/000000?text=+) `Maroon` is displayed in the above figure, since the architecture is available online.
+Only the last few layers, with the custom layer highlited in ![#880016](https://via.placeholder.com/15/#880016/000000?text=+) `Maroon` is displayed in the above figure, since the architecture is available online.
 
 The model's layers, are frozen except for the last 3, which are left as trainable.
 
