@@ -1,2 +1,3 @@
-# notMNIST-trial
-notMNIST dataset
+# probing the notMNIST dataset:
+---
+about the data:
