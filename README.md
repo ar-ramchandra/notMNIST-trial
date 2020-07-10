@@ -21,7 +21,7 @@ With a trial and error uproach in mind, the following attempts were made to buil
 ### Initial model:
 
 
-![attempt1](https://drive.google.com/file/d/1Aroesie2fw9QCXiI8HVGWNt3DzHJqfzn/view?usp=sharing)
+![attempt 1](https://drive.google.com/file/d/1Aroesie2fw9QCXiI8HVGWNt3DzHJqfzn/view?usp=sharing)
 
 
 
