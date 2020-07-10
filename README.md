@@ -23,7 +23,7 @@ With a trial and error uproach in mind, the following attempts were made to buil
 
 ![attempt 1](attempt1.jpg)
 
-
+The first attempted model is a squential keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool zise of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
 
 
 <b>References</b>
