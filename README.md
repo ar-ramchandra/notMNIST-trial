@@ -210,7 +210,7 @@ Based on further investigation, we will see if this approch is allright, or we s
 Try more models, use Large as trainset, and small as trainset. 
 
 
-![](https://gph.is/29ErWmf)
+![coming soon](https://media.giphy.com/media/3o72FkiKGMGauydfyg/giphy.gif)
 
 <b>References</b>
 <a id='blog_dest'></a>
