@@ -56,7 +56,7 @@ The images notEmnist_large zip were extracted to a directory and the images of 1
 
 1. The images were normalised by scaling with 1/255.0.
 2. A zoom range of [0.5,2] was applied.
-
+3. images resized to <img src="https://render.githubusercontent.com/render/math?math=224 \times 224}">
 
 The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
 
@@ -82,7 +82,7 @@ The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical c
 #### Results:
 On completion of training, and reduction of LR, below is the graph of the losses of the last few epochs;
 
-![vgg16training][vggloss.jpg]
+![vgg16training](vggloss.jpg)
 
 
 We can clearly see a divergance and not effective model with some heavy loss.
@@ -90,6 +90,48 @@ We can clearly see a divergance and not effective model with some heavy loss.
 We would need to look into this further to try and fix it. As for this reason, we are not attempting to fit it in our open CV model to check realtime results.
 
 
+
+### resNet50:
+
+#### input:
+
+The images notEmnist_large zip were extracted to a directory and the images of 10 classes were given to the [keras image data generator](#keras_imgdatagen), with a validation split of 0.3, batch size of 64 was used, as of agumentation;
+
+1. The images were normalised by scaling with 1/255.0.
+2. A zoom range of [0.5,2] was applied.
+
+
+The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
+
+#### Model:
+
+The VGG16 model was imported from keras [applications](#keras_resnet50), with imagenet weights, with the parameter include top as False. This give us the model without the prediction layer. All of these layers were frozen, the input shape of the model changed to <img src="https://render.githubusercontent.com/render/math?math=32\times32"> which is the minimum shape allowed.
+
+Another model was created and joined to the out put of the above model. These are the custom trainable layers of the ResNet50 implementation and they are as follows;
+
+![resnet50](resnet50custom.jpg)
+
+
+The model's layers, are frozen except for the last 3, which are left as trainable.
+
+The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical cross entropy](#keras_catcrent) as the loss function and [accuracy](#keras_acc) as the metric.
+
+#### Callbacks, 
+
+1. [Early stopping](#keras_es), monitoring the validation loss, with a patience of 3 and mode auto was used.
+2. [ReduceLROnPlateau](#keras_reducelr), also monitoring the validation loss, with a patience of 3 and minimum learning rate set to auto.
+
+
+#### Results:
+On completion of training, and reduction of LR, below is the result of the last epoch;
+
+Epoch 34/500
+13227/13227 [==============================] - 345s 26ms/step - loss: 0.8264 - accuracy: 0.7230 - val_loss: 0.7797 - val_accuracy: 0.7424 - lr: 1.0000e-08
+
+
+We can clearly see some heavy loss, thus rendering the model ununseable.
+
+We would need to look into this further to try and fix it. As for this reason, we are not attempting to fit it in our open CV model to check realtime results.
 
 
 
@@ -143,13 +185,17 @@ We would need to look into this further to try and fix it. As for this reason, w
 
 
  <a id='keras_vgg16'></a>
->9. **vgg16 keras**
+>10. **vgg16 keras**
 >
 >Keras.io.[vgg16](https://keras.io/api/applications/vgg/#vgg16-function)](on 10-07-2020 PM)
 
  <a id='keras_dense'></a>
->9. **Keras Dense Layer**
+>11. **Keras Dense Layer**
 >
 >Keras.io.[Dense Layer](https://keras.io/api/layers/core_layers/dense/)](on 10-07-2020 PM)
 
 
+ <a id='keras_resnet50'></a>
+>11. **ResNet50**
+>
+>Keras.io.[ResNet50](https://keras.io/api/applications/resnet/#resnet50-function)](on 10-07-2020 PM)
