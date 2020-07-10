@@ -1,3 +1,3 @@
 # probing the notMNIST dataset:
 ---
-about the data:
+## about the data:
