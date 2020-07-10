@@ -30,22 +30,46 @@ The images notEmnist_large zip was extracted to a directory and the images of 10
 
 The first attempted model is a squential[[2](#keras_seq)]  keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool zise of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
 
-The model was compiled with [Adam](https://keras.io/api/optimizers/adam/) as the optimizer, [categotical cross entropy](https://keras.io/api/losses/probabilistic_losses/#categoricalcrossentropy-class) as the loss function and [accuracy](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class) as the metric.
+The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical cross entropy](#keras_catcrent) as the loss function and [accuracy](#keras_acc) as the metric.
 
 #### Callbacks, 
 
-1. [Early stopping](https://keras.io/api/callbacks/early_stopping/), monitoring the validation loss, with a patience of 3 and mode auto was used.
-2. [ReduceLROnPlateau](https://keras.io/api/callbacks/reduce_lr_on_plateau/), also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=1.0\times10^{-5}"> was used.
+1. [Early stopping](#keras_es), monitoring the validation loss, with a patience of 3 and mode auto was used.
+2. [ReduceLROnPlateau](#keras_reducelr), also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=1.0\times10^{-5}"> was used.
 
 
 <b>References</b>
 <a id='blog_dest'></a>
 >1. **notMNIST dataset**
 >
->Yaroslav Bulatov.[[notMNIST dataset](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html)](at 10-07-2020, 18:00)
+>Yaroslav Bulatov.[[notMNIST dataset](http://yaroslavvb.blogspot.com/2011/09/notmnist-dataset.html)](10-07-2020 PM)
 
 <a id='keras_seq'></a>
 >2. **keras Sequential Model**
 >
->Keras.io.[[Sequential model](https://keras.io/guides/sequential_model/)](on 10-07-2020 at 18:00)
+>Keras.io.[[Sequential model](https://keras.io/guides/sequential_model/)](on 10-07-2020 PM)
 
+<a id='keras_adam'></a>
+>3. **Adam **
+>
+>Keras.io.[[Adam Optimizerl](https://keras.io/api/optimizers/adam/)](on 10-07-2020 PM)
+
+<a id='keras_catcrent'></a>
+>4. **Categorical Cross Entropy**
+>
+>Keras.io.[[CatCrEntr](https://keras.io/api/losses/probabilistic_losses/#categoricalcrossentropy-class)](on 10-07-2020 PM)
+
+<a id='keras_acc'></a>
+>5. **Accuracy**
+>
+>Keras.io.[[Accuracy](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class)](on 10-07-2020 PM)
+
+ <a id='keras_es'></a>
+>6. **Early Stopping**
+>
+>Keras.io.[[EarlyStopping](https://keras.io/api/callbacks/early_stopping/)](on 10-07-2020 PM)
+
+ <a id='keras_reducelr'></a>
+>7. **ReduceLronPlateau**
+>
+>Keras.io.[[ReduceLrOnPlateau](https://keras.io/api/callbacks/reduce_lr_on_plateau/)](on 10-07-2020 PM)
