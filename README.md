@@ -141,12 +141,12 @@ Epoch 34/500
 13227/13227 [==============================] - 345s 26ms/step - loss: 0.8264 - accuracy: 0.7230 - val_loss: 0.7797 - val_accuracy: 0.7424 - lr: 1.0000e-08
 
 
-We can clearly see some heavy loss, thus rendering the model ununseable.
+We can clearly see some heavy loss, thus rendering the model unusable.
 
 We would need to look into this further to try and fix it. As for this reason, we are not attempting to fit it in our open CV model to check realtime results.
 
 
-### Since the best of the three models was the custom model so far, let us see how it fares in real time;
+### Since the best of the three models was the custom model, let us see how it fares in real time;
 
 Predictions for A:
 ![A](A.jpeg)
@@ -198,10 +198,10 @@ I is constantly predicted as E.
 
 ![J](J.jpeg)
 
-J us also being predicted as H.
+J is also being predicted as H.
 
 
-H,E for reasons not explored so farm seem to be the dominant class though the labels are equally distributed. 
+H,E for reasons not explored so far seem to be the dominant class though the labels are equally distributed. 
 
 B, F and H seems be doing comparitively better than the remaining classes.
 
