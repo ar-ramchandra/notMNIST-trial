@@ -30,8 +30,7 @@ The model was compiled with Adam as the optimizer, categotical cross entropy as 
 As for the callbacks, 
 
 1. Early stopping, monitoring the validation loss, with a patience of 3 and mode auto was used.
-2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=1.0 * 10^{-5}"> x * y
-
+2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of <a href="https://www.codecogs.com/eqnedit.php?latex=1.0&space;\times&space;10^{-5}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?1.0&space;\times&space;10^{-5}" title="1.0 \times 10^{-5}" /></a>
 
 
 <b>References</b>
