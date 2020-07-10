@@ -25,6 +25,14 @@ With a trial and error uproach in mind, the following attempts were made to buil
 
 The first attempted model is a squential keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool zise of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
 
+The model was compiled with Adam as the optimizer, categotical cross entropy as the loss function and accuracy as the metric.
+
+As for the callbacks, 
+
+1. Early stopping, monitoring the validation loss, with a patience of 3 and mode auto was used.
+2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of 1.0 x 10^-5
+
+
 
 <b>References</b>
 <a id='blog_dest'></a>
