@@ -1,3 +1,3 @@
-# <u>Probing the notMNIST dataset:</u>
+# Probing the notMNIST dataset
 ---
 ## about the data:
