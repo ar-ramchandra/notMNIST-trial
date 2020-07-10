@@ -21,7 +21,7 @@ With a trial and error uproach in mind, the following attempts were made to buil
 ### Initial model:
 
 
-![attempt 1](C:\Users\offic\Desktop\attempt1.jpg)
+![attempt 1](attempt1.jpg)
 
 
 
