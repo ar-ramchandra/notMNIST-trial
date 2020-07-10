@@ -210,8 +210,7 @@ Based on further investigation, we will see if this approch is allright, or we s
 Try more models, use Large as trainset, and small as trainset. 
 
 
-<iframe src="https://giphy.com/embed/3o72FkiKGMGauydfyg" width="480" height="363" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/arielle-m-coming-soon-3o72FkiKGMGauydfyg">via GIPHY</a></p>
-
+![](https://gph.is/29ErWmf)
 
 <b>References</b>
 <a id='blog_dest'></a>
