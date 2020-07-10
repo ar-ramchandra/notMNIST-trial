@@ -20,9 +20,11 @@ With a trial and error uproach in mind, the following attempts were made to buil
 
 ### Initial model:
 
-Input:
-The images notEmnist_large zip was extracted to a directory and the images of 10 classes were given to the [keras image data generator](https://keras.io/api/preprocessing/image/), with a validation split of 0.3, batch size of 32 was used and no agumentation. The train data consited of 370385 images, while the test data had 158729 images.
+#### Input:
 
+The images notEmnist_large zip was extracted to a directory and the images of 10 classes were given to the [keras image data generator](https://keras.io/api/preprocessing/image/), with a validation split of 0.3, batch size of 32 was used and no agumentation. The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
+
+#### Model:
 
 ![attempt 1](attempt1.jpg)
 
