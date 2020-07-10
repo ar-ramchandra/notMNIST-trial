@@ -22,7 +22,7 @@ With a trial and error uproach in mind, the following attempts were made to buil
 
 #### Input:
 
-The images notEmnist_large zip was extracted to a directory and the images of 10 classes were given to the [keras image data generator](#keras_imagedatagen), with a validation split of 0.3, batch size of 32 was used and no agumentation. The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
+The images notEmnist_large zip was extracted to a directory and the images of 10 classes were given to the [keras image data generator](#keras_imgdatagen), with a validation split of 0.3, batch size of 32 was used and no agumentation. The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
 
 #### Model:
 
@@ -76,6 +76,6 @@ The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical c
 
 
  <a id='keras_imgdatagen'></a>
->8. **ReduceLronPlateau**
+>8. **Image data generator**
 >
->Keras.io.[[ReduceLrOnPlateau](https://keras.io/api/preprocessing/image/#imagedatagenerator-class)](on 10-07-2020 PM)
+>Keras.io.[[ImageDataGenerator](https://keras.io/api/preprocessing/image/#imagedatagenerator-class)](on 10-07-2020 PM)
