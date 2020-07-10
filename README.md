@@ -82,7 +82,7 @@ The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical c
 #### Results:
 On completion of training, and reduction of LR, below is the graph of the losses of the last few epochs;
 
-![vgg16training][vgg loss.png]
+![vgg16training][vggloss.jpg]
 
 
 We can clearly see a divergance and not effective model with some heavy loss.
