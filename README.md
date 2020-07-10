@@ -30,7 +30,7 @@ The model was compiled with Adam as the optimizer, categotical cross entropy as 
 As for the callbacks, 
 
 1. Early stopping, monitoring the validation loss, with a patience of 3 and mode auto was used.
-2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of x * y
+2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"> x * y
 
 
 
