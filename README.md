@@ -67,6 +67,31 @@ The last prediction layer was removed and replaced by a custom [Dense layer](#ke
 
 ![vgg16](vgg16.jpg)
 
+Only the last few layers, with the custom layer highlited in maroon is displayed in the above figure, since the architecture is available online.
+
+The model's layers, are frozen except for the last 3, which are left as trainable.
+
+The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical cross entropy](#keras_catcrent) as the loss function and [accuracy](#keras_acc) as the metric.
+
+#### Callbacks, 
+
+1. [Early stopping](#keras_es), monitoring the validation loss, with a patience of 3 and mode auto was used.
+2. [ReduceLROnPlateau](#keras_reducelr), also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=1.0\times10^{-5}"> was used.
+
+
+#### Results:
+On completion of training, and reduction of LR, below is the graph of the losses of the last few epochs;
+
+![vgg16training][vgg16loss.png]
+
+
+We can clearly see a divergance and not effective model with some heavy loss.
+
+We would need to look into this further to try and fix it. As for this reason, we are not attempting to fit it in our open CV model to check realtime results.
+
+
+
+
 
 <b>References</b>
 <a id='blog_dest'></a>
