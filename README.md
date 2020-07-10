@@ -20,6 +20,9 @@ With a trial and error uproach in mind, the following attempts were made to buil
 
 ### Initial model:
 
+Input:
+The images notEmnist_large zip was extracted to a directory and the images of 10 classes were given to the [keras image data generator](https://keras.io/api/preprocessing/image/), with a validation split of 0.3, batch size of 32 was used and no agumentation. The train data consited of 370385 images, while the test data had 158729 images.
+
 
 ![attempt 1](attempt1.jpg)
 
@@ -30,7 +33,9 @@ The model was compiled with Adam as the optimizer, categotical cross entropy as 
 As for the callbacks, 
 
 1. Early stopping, monitoring the validation loss, with a patience of 3 and mode auto was used.
-2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=\[1.0\times10^{-5}\]">
+2. ReduceLROnPlateau, also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=[1.0\times10^{-5}\]"> was used.
+
+
 <b>References</b>
 <a id='blog_dest'></a>
 >**notMNIST dataset**
