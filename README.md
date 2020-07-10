@@ -30,7 +30,7 @@ The images notEmnist_large zip was extracted to a directory and the images of 10
 
 The first attempted model is a squential keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool zise of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
 
-The model was compiled with Adam as the optimizer, categotical cross entropy as the loss function and accuracy as the metric.
+The model was compiled with [Adam](https://keras.io/api/optimizers/adam/) as the optimizer, [categotical cross entropy](https://keras.io/api/losses/probabilistic_losses/#categoricalcrossentropy-class) as the loss function and [accuracy](https://keras.io/api/metrics/accuracy_metrics/#accuracy-class) as the metric.
 
 As for the callbacks, 
 
