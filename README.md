@@ -28,7 +28,7 @@ The images notEmnist_large zip were extracted to a directory and the images of 1
 
 ![attempt 1](attempt1.jpg)
 
-The first attempted model is a [squential](#keras_seq) keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool zise of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
+The first attempted model is a [squential](#keras_seq) keras model, of 7 layers, with seven (3x3) convolutions, two maxpooling layers with a pool size of 2, a flatten layer and as the output, a dense layer with 10 neurons, one for each class.
 
 The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical cross entropy](#keras_catcrent) as the loss function and [accuracy](#keras_acc) as the metric.
 
