@@ -35,7 +35,7 @@ The model was compiled with [Adam](https://keras.io/api/optimizers/adam/) as the
 As for the callbacks, 
 
 1. [Early stopping](https://keras.io/api/callbacks/early_stopping/), monitoring the validation loss, with a patience of 3 and mode auto was used.
-2. [ReduceLROnPlateau](https://keras.io/api/callbacks/reduce_lr_on_plateau/), also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=[1.0\times10^{-5}\]"> was used.
+2. [ReduceLROnPlateau](https://keras.io/api/callbacks/reduce_lr_on_plateau/), also monitoring the validation loss, with a patience of 3 and minimum learning rate of <img src="https://render.githubusercontent.com/render/math?math=1.0\times10^{-5}\"> was used.
 
 
 <b>References</b>
