@@ -42,7 +42,15 @@ The model was compiled with [Adam](#keras_adam) as the optimizer, [categotical c
 
 #### Results:
 
-**WILL BE UPDATED SOON**
+The loss function graphed is as follows;
+
+![custom_loss](customloss.png)
+
+We can see though the loss is high it is much lower than the deeper, pretrained models described below.
+
+A shallower network might help us..
+
+Further tweaking and improvements will be added  to the above model and published here.
 
 
 
@@ -95,13 +103,17 @@ We would need to look into this further to try and fix it. As for this reason, w
 
 #### input:
 
-The images notEmnist_large zip were extracted to a directory and the images of 10 classes were given to the [keras image data generator](#keras_imgdatagen), with a validation split of 0.3, batch size of 64 was used, as of agumentation;
+The images notEmnist_large zip were extracted to a directory and the images of 10 classes were given to the [keras image data generator](#keras_imgdatagen), with a validation split of 0.2, batch size of 32 was used, as of agumentation;
 
 1. The images were normalised by scaling with 1/255.0.
 2. A zoom range of [0.5,2] was applied.
+3. Width shift of 0.3
+4. Height shitf of 0.3
+5. both shits with a constaf fill of 190
 
 
-The train data consited of 370385 images, while the test data had 158729 images. The train and test images are a split of notMnist_large itself.
+
+The train data consited of 423295 images, while the test data had 105819 images. The train and test images are a split of notMnist_large itself.
 
 #### Model:
 
