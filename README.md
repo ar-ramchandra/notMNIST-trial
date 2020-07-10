@@ -1,0 +1,2 @@
+# notMNIST-trial
+notMNIST dataset
