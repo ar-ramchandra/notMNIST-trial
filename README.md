@@ -146,6 +146,72 @@ We can clearly see some heavy loss, thus rendering the model ununseable.
 We would need to look into this further to try and fix it. As for this reason, we are not attempting to fit it in our open CV model to check realtime results.
 
 
+### Since the best of the three models was the custom model so far, let us see how it fares in real time;
+
+Predictions for A:
+![A](A.jpeg)
+
+A is being predicted as E and H.
+
+
+![B](B.jpeg)
+
+B is ok, it is being predicted as B and sometimes as H which is better than the others.
+
+
+![C](C.jpeg)
+
+C is being predicted as A and H which is bad.
+
+
+![D](D.jpeg)
+![D1](D1.jpeg)
+
+D is being predicted mostly as F and E. They do look a bit alike, but needs changes.
+
+
+![E1](E1.jpeg)
+![E2](E2.jpeg)
+
+E is being predicted as H and E while we are getting E which is ok.
+
+
+![F1](F1.jpeg)
+![f2](F2.jpeg)
+
+F is predicted as F and B while we are getting f it is ok.
+
+
+![G](G.jpeg)
+
+G is predicted E which is not good.
+![H](H1.jpeg)
+![H1](H2.jpeg)
+
+H is doing ok, while it is predicted as H and E.
+
+
+![I](I.jpeg)
+
+I is constantly predicted as E.
+
+
+![J](J.jpeg)
+
+J us also being predicted as H.
+
+
+H,E for reasons not explored so farm seem to be the dominant class though the labels are equally distributed. 
+
+B, F and H seems be doing comparitively better than the remaining classes.
+
+Based on further investigation, we will see if this approch is allright, or we should try another dataset. 
+
+Try more models, use Large as trainset, and small as trainset. 
+
+
+<iframe src="https://giphy.com/embed/3o72FkiKGMGauydfyg" width="480" height="363" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/arielle-m-coming-soon-3o72FkiKGMGauydfyg">via GIPHY</a></p>
+
 
 <b>References</b>
 <a id='blog_dest'></a>
